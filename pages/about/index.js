@@ -26,20 +26,20 @@ const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <FaWordpress />,
+          <FaHtml5 key="html5" />,
+          <FaCss3 key="css3" />,
+          <FaJs key="js" />,
+          <FaReact key="react" />,
+          <FaWordpress key="wordpress" />,
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobephotoshop />],
+        icons: [<FaFigma key="figma" />, <SiAdobephotoshop key="photoshop" />],
       },
     ],
   },
-  {
+{
     title: 'awards',
     info: [
       {
@@ -216,7 +216,7 @@ const About = () => {
                   {item.title}
                 </div>
               );
-            })}
+            })} 
           </div>
           <div className='py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
             {aboutData[index].info.map((item, itemIndex) => {
